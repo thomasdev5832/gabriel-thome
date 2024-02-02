@@ -1,5 +1,5 @@
 footer {
-    margin-bottom: 1%;
+    margin-bottom: 1em;
 }
 
 footer p {
@@ -10,4 +10,8 @@ footer p {
 footer svg {
     max-width: 14px;
     filter   : invert(52%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(94%) contrast(90%);
+}
+
+footer svg:hover {
+    filter: invert(43%) sepia(93%) saturate(417%) hue-rotate(123deg) brightness(86%) contrast(91%);
 }

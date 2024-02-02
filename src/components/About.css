@@ -7,34 +7,21 @@
 }
 
 .about .stack {
-    margin-top    : 1em;
+    margin-top    : .2em;
     display       : flex;
-    flex-direction: column;
-    align-items   : left;
+    flex-direction: row;
+    align-self    : center;
     overflow      : hidden;
+    padding       : 1em 1em;
 }
 
-.about .stack ul {
-    display         : flex;
-    flex-direction  : row;
-    gap             : .5em;
-    /*animation     : slide 20s linear infinite;*/
+.about .stack img {
+    width       : 24px;
+    height      : 24px;
+    margin-right: .5em;
+    transition  : 0.3s ease-out;
 }
 
-.about .stack ul li img {
-    width : 24px;
-    height: 24px;
-}
-
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-        /* Começa na posição inicial (não transladado) */
-    }
-
-    100% {
-        transform: translateX(-100%);
-        /* Move para a esquerda até 100% da largura do contêiner */
-    }
+.about .stack img:hover {
+    transform: rotate(50deg);
 }

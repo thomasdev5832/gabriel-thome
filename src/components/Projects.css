@@ -15,8 +15,12 @@
 .projects div h3 {
     font-size  : 14px;
     font-weight: bold;
-    color      : var(--primary-color);
-    width      : fit-content;
+
+    width: fit-content;
+}
+
+.projects div h3 a {
+    color: var(--primary-color);
 }
 
 .hover-underline-animation {

@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Hero />
+      <Dots />
       <About />
       <Dots />
       <Projects />
