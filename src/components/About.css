@@ -1,0 +1,40 @@
+.about p {
+    font-weight: normal;
+}
+
+.about svg {
+    filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(94%) contrast(90%);
+}
+
+.about .stack {
+    margin-top    : 1em;
+    display       : flex;
+    flex-direction: column;
+    align-items   : left;
+    overflow      : hidden;
+}
+
+.about .stack ul {
+    display         : flex;
+    flex-direction  : row;
+    gap             : .5em;
+    /*animation     : slide 20s linear infinite;*/
+}
+
+.about .stack ul li img {
+    width : 24px;
+    height: 24px;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        /* Começa na posição inicial (não transladado) */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move para a esquerda até 100% da largura do contêiner */
+    }
+}

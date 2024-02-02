@@ -1,0 +1,13 @@
+footer {
+    margin-bottom: 1%;
+}
+
+footer p {
+    color    : var(--secondary-color);
+    font-size: 10px;
+}
+
+footer svg {
+    max-width: 14px;
+    filter   : invert(52%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(94%) contrast(90%);
+}

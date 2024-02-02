@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-bg-color   : #0c0c0c;
+  --primary-color   : #FFF;
+  --secondary-color : #6a6f77;
+  --tertiary-color  : #1e1e1e;
+  --quaternary-color: #161616;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family     : 'Space Mono', monospace;
+  background-color: var(--main-bg-color);
+  color           : var(--primary-color);
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  min-width       : 375px;
+}
+
+section {
+  display       : flex;
+  flex-direction: column;
+  gap           : .1em;
+  width         : 80%;
+  margin        : 20%;
+}
+
+section h2 {
+  font-size    : 18px;
+  font-weight  : bold;
+  margin-bottom: .4em;
+}
+
+section p {
+  color      : var(--secondary-color);
+  font-weight: normal;
+  font-size  : 16px;
+}
+
+.dots {
+  filter: invert(52%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(94%) contrast(90%);
+  width : 20px;
+}
+
+/* desktops */
+@media (min-width: 768px) {
+  section {
+    width: 60%;
+  }
+}
+
+/*  smartphones */
+@media (max-width: 767px) {
+  section {
+    width: 80%;
+  }
 }
