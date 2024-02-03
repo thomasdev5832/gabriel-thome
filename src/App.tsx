@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hero from './components/Hero';
@@ -9,6 +9,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    document.title = "Gabriel Thome - Blockchain Developer";
+  }, []);
+
   return (
     <div className="App">
       <Hero />
