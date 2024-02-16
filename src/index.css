@@ -1,12 +1,19 @@
 :root {
-  --main-bg-color   : #0c0c0c;
-  --primary-color   : #FFF;
-  --secondary-color : #6a6f77;
-  --tertiary-color  : #1e1e1e;
-  --quaternary-color: #161616;
+  --main-bg-color    : #0c0c0c;
+  --primary-color    : #FFF;
+  --secondary-color  : #6a6f77;
+  --tertiary-color   : #1e1e1e;
+  --quaternary-color : #161616;
+  --orange-color     : #FF4200;
+  --dark-orange-color: #ff4400cc;
+  --purple-one       : #8160f4;
+  --purple-two       : #ba86f0;
+  --purple-three     : #6248d6;
+  --purple-four      : #4130b9;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 body {
   font-family     : 'Space Mono', monospace;
@@ -22,7 +29,7 @@ section {
   display       : flex;
   flex-direction: column;
   gap           : .1em;
-  width         : 80%;
+  width         : 100%;
   margin        : 20%;
 }
 

@@ -1,0 +1,17 @@
+.names {
+    margin-top   : 50px;
+    margin-bottom: 50px;
+    text-align   : center;
+    max-width    : 90vw;
+}
+
+.names h1 {
+    font-size  : 26px;
+    font-weight: bold;
+}
+
+.names p {
+    color      : var(--secondary-color);
+    font-size  : 18px;
+    font-weight: bold;
+}

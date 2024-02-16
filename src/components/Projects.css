@@ -6,6 +6,7 @@
     margin-bottom   : 1em;
     background-color: var(--quaternary-color);
     border-radius   : 7px;
+    border          : 2px solid var(--tertiary-color);
 }
 
 .projects div:hover {
@@ -36,7 +37,7 @@
     height          : 2px;
     bottom          : 0;
     left            : 0;
-    background-color: #0c8f7e;
+    background-color: var(--orange-color);
     transform-origin: bottom right;
     transition      : transform 0.25s ease-out;
 }
