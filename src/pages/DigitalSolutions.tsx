@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import './DigitalSolutions.css';
 import computer from '../assets/Computer.svg';
 import rocket from '../assets/rocket.svg';
 import laptop from '../assets/Laptop.svg';
+import pig from '../assets/Pig.svg';
 
 const arrow = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.2 19 4.8-7-4.8-7H3l4.8 7L3 19h13.2Z"/>
@@ -25,12 +27,22 @@ const lock = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="no
 const chevrondown = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
 </svg>
+const badgecheck = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 12 2 2 5-5m4.5 5.3 1-.9a2 2 0 0 0 0-2.8l-1-.9a2 2 0 0 1-.6-1.4V7a2 2 0 0 0-2-2h-1.2a2 2 0 0 1-1.4-.5l-.9-1a2 2 0 0 0-2.8 0l-.9 1a2 2 0 0 1-1.4.6H7a2 2 0 0 0-2 2v1.2c0 .5-.2 1-.5 1.4l-1 .9a2 2 0 0 0 0 2.8l1 .9c.3.4.6.9.6 1.4V17a2 2 0 0 0 2 2h1.2c.5 0 1 .2 1.4.5l.9 1a2 2 0 0 0 2.8 0l.9-1a2 2 0 0 1 1.4-.6H17a2 2 0 0 0 2-2v-1.2c0-.5.2-1 .5-1.4Z"/>
+</svg>
+const question = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 10a2.5 2.5 0 1 1 5 .2 2.4 2.4 0 0 1-2.5 2.4V14m0 3h0m9-5a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg>
 
 const DigitalSolutions: React.FC = () => {
+  useEffect(() => {
+    document.title = "Sites de Alta Performance";
+  }, []);
+
   return (
     <div className='main-site'>
       <div className='top-bar'>
-        <p>Tecnologia de alta performance</p>
+        <p>Tecnologia focada em resultados🏆</p>
       </div>
       <section className='hero-wrap'>
         <div className='subhero-wrap-one'>
@@ -38,11 +50,11 @@ const DigitalSolutions: React.FC = () => {
               <img src={computer} alt="" />
           </div>
           <div className='subhero-wrap-two'>
-            <h1>Aumente as vendas do seu negócio com um <span>site de alta performance.</span></h1>
+            <h1>Aumente as vendas do seu negócio com um <span>site profissional de alta performance.</span></h1>
               <p>Use o poder da internet para destacar sua empresa e conquistar novos clientes.</p>
               
-              <a href="">
-                  <button>Eu quero 🚀</button>
+              <a className='cta-button' href="https://wa.link/n336tc">
+                  <button>Quero um site profissional 🚀</button>
               </a>
           </div>
         
@@ -54,7 +66,7 @@ const DigitalSolutions: React.FC = () => {
         
         <div className="vantagens-container">
         
-          <h2>Vantagens de um site de <span>alta performance</span></h2>
+          <h2>Vantagens de um <span>site profissional</span></h2>
           <ul>
             <li>{arrow} Atrair mais pessoas para o seu negócio todos os dias</li>
             <li>{arrow} Ter uma vitrine virtual no maior espaço de vendas do mundo</li>
@@ -67,12 +79,20 @@ const DigitalSolutions: React.FC = () => {
         </div>
       </section>
 
-        <section className='feature-wrap'>
-            <h2>Funcionalidades de um <span>site profissional</span></h2>
+      <section className='grow-wrap'>
+        <img src={rocket} alt="" />
+        <h2>Eleve o seu negócio para o próximo nível e estabeleça uma estrutura de vendas ágil e eficiente.</h2>
+        <a className='cta-button' href="https://wa.link/n336tc">
+                  <button>Quero um site profissional 🚀</button>
+              </a>
+      </section>
+      
+      <section className='feature-wrap'>
+            <h2>Funcionalidades de um <span>site de alta performance</span></h2>
          <div className="container-wrap">
             <div className="service">
                 {mobile}
-                <h3>Responsivo</h3>
+                <h3>Responsividade</h3>
                 <p>Site totalmente responsivo, garantindo uma experiência de usuário consistente em qualquer dispositivo.</p>
             </div>
             <div className="service">
@@ -92,11 +112,136 @@ const DigitalSolutions: React.FC = () => {
             </div>
             <div className="service">
               {lock}
-                <h3>Velocidade e Segurança Garantidas</h3>
+                <h3>Velocidade e Segurança</h3>
                 <p>Tempo de carregamento rápido e segurança certificada, proporcionando uma experiência fluida e segura para seus visitantes.</p>
             </div>
             </div>
       </section>
+
+      <section className='todo-wrap'>
+        <h2>Para quem são os <span>sites de alta performance?</span></h2>
+        <div>
+          <p><span>Empreendedores</span><br /> que buscam se inserir no mercado digital, fazendo deste meio um canal de vendas mais forte e lucrativo.</p>
+        </div>
+        <div>
+          <p><span>Prestadores de serviço</span><br /> que desejam criar páginas para atrair clientes e mostrar de forma mais atrativa os benefícios dos seus serviços.</p>
+        </div>
+        <div>
+          <p><span>Infoprodutores</span><br /> que desejam ter páginas rápidas, bonitas e otimizadas para seus lançamentos e perpétuos.</p>
+        </div>
+        <div>
+          <p><span>Lojas Físicas</span><br /> que querem marcar presença no digital e se destacar da concorrência, mesmo vendendo um produto físico.</p>
+        </div>
+        <div>
+          <p><span>E-commerces</span><br /> que desejam construir lojas virtuais otimizadas, eficientes e que facilitem a jornada de compra dos clientes;</p>
+        </div>
+      </section>
+
+      <section className='grow-wrap'>
+        <img src={pig} alt="" />
+        <h2>Sites otimizados conquistam mais clientes e vendem muito mais.</h2>
+        <p>A otimização é um recurso importante para todo site profissional.<br /><br />Mesmo que não pareça importante, sua influência na performance da página não deve ser ignorada.</p>
+        <a className='cta-button' href="https://wa.link/n336tc">
+                  <button>Quero um site profissional 🚀</button>
+              </a>
+      </section>
+
+      <section className='about-wrap'>
+        <div>
+          {badgecheck}
+          <h2>Experiência Profissional</h2>
+          <p>Com mais de 15 anos de experiência em tecnologia e desenvolvimento web, dedicação à excelência técnica e incessante busca pela alta qualidade, aliados a uma abordagem centrada no cliente e à habilidade de transformar requisitos complexos em soluções eficazes. <br /><br /> O foco principal é trazer resultados tangíveis e significativos para cada cliente.
+            </p>
+        </div>
+      </section>
+
+      
+
+      <section className='faq-wrap'>
+        {question}
+        <h2>Dúvidas Frequentes</h2>
+        <Accordion>
+          <AccordionItem header="Quais são as etapas para ter um site profissional?">
+          <h4>Fluxo de Desenvolvimento</h4>
+            <ol>
+                <li>
+                    <div>
+                        <h5>1. Reunião e Briefing</h5>
+                        <p>Descreve qual tipo de site ou serviço deseja, onde são esclarecidas quais as necessidades do cliente.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5>2. Orçamento e Pagamento</h5>
+                        <p>Com base nas informações da reunião, é fornecido um orçamento transparente e detalhado para o desenvolvimento.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5>3. Layout e Desenvolvimento</h5>
+                        <p>Após o pagamento, o layout aprovado é transformado em um site funcional, implementando recursos e funcionalidades conforme necessário.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5>4. Aprovação</h5>
+                        <p>O cliente revisa o site em desenvolvimento e fornece feedback para ajustes finais antes do lançamento.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5>5. Lançamento</h5>
+                        <p>Após a aprovação final, o site é lançado oficialmente, pronto para ser descoberto pelo público-alvo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5>6. Suporte</h5>
+                        <p>O suporte técnico está disponível para garantir que o site funcione perfeitamente e oferecer assistência contínua conforme necessário.</p>
+                    </div>
+                </li>
+            </ol>
+          </AccordionItem>
+
+          <AccordionItem header="Qual o prazo de entrega?">
+            <p>O prazo de cada projeto varia de acordo com o tamanho e complexidade do site.
+            <br /><br />
+            Em média os sites tendem a ser totalmente desenvolvidos em torno de 14 dias úteis, porém pode ser em menos tempo ou em mais tempo, dependendo também da cooperação do cliente e de outros fatores de implementação do projeto.</p>
+          </AccordionItem>
+
+          <AccordionItem header="Como funciona e quais as formas de pagamento?">
+            <p>O pagamento dos serviços poderá ser feito por:
+            <br /><br />
+              - PIX, boleto ou transferência bancária
+              <br />
+              - Cartão de crédito em até 12x com juros
+              <br />
+              - Criptomoedas específicas
+              <br /><br />
+              O valor total será pago 50 % antes de iniciar e 50% quando finalizar o projeto.</p>
+          </AccordionItem>
+
+          <AccordionItem header="Qual segurança eu tenho?">
+            <p>Na fase inicial do projeto, você receberá um contrato para assinatura digital (com validade jurídica) onde estará descrito prazos, valores, direitos e obrigações referentes ao serviço de criação de websites.</p>
+          </AccordionItem>
+      </Accordion>
+      </section>
+
+      <section className='grow-wrap'>
+        <img src={laptop} alt="" />
+        <h2>Aumente o potencial do seu negócio com uma presença online profissional</h2>
+        <p>Um site profissional é a ferramenta que você precisa para se destacar da concorrência, consolidar sua marca e facilitar a interação com seus clientes.</p>
+        <a className='cta-button' href="https://wa.link/n336tc">
+                  <button>Quero um site profissional 🚀</button>
+              </a>
+      </section>
+
+      <section className='footer-wrap'>
+        <a href="">Política de Privacidade </a>©
+        <a href=""> Termnos de Uso</a>
+      </section>
+
+
     </div>
   );
 };

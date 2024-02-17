@@ -30,7 +30,7 @@ section {
   flex-direction: column;
   gap           : .1em;
   width         : 100%;
-  margin        : 20%;
+  margin        : 10%;
 }
 
 section h2 {
@@ -54,6 +54,7 @@ section p {
 @media (min-width: 768px) {
   section {
     width: 60%;
+
   }
 }
 
