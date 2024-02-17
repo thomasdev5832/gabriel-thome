@@ -7,9 +7,6 @@ import DigitalSolutions from './pages/DigitalSolutions';
 
 
 function App() {
-  useEffect(() => {
-    document.title = "Gabriel Thome - Blockchain Developer";
-  }, []);
 
   return (
     <BrowserRouter>

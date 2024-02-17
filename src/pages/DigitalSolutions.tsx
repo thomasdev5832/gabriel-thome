@@ -5,6 +5,7 @@ import computer from '../assets/Computer.svg';
 import rocket from '../assets/rocket.svg';
 import laptop from '../assets/Laptop.svg';
 import pig from '../assets/Pig.svg';
+import {Helmet} from "react-helmet";
 
 const arrow = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.2 19 4.8-7-4.8-7H3l4.8 7L3 19h13.2Z"/>
@@ -35,12 +36,16 @@ const question = <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill
 </svg>
 
 const DigitalSolutions: React.FC = () => {
-  useEffect(() => {
-    document.title = "Sites de Alta Performance";
-  }, []);
-
   return (
+    
     <div className='main-site'>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Sites de Alta Performance</title>
+                <meta name="description" content="Criação de sites profissionais de alta performance." />
+                <meta name="keywords" content="sites, landing pages, seo, lojas virtuais, ecommerce" />
+                <meta name="author" content="Gabriel Thome" />
+      </Helmet>
       <div className='top-bar'>
         <p>Tecnologia focada em resultados🏆</p>
       </div>
